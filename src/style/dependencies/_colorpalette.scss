@@ -1,0 +1,49 @@
+$color-purple-100: #45005c;
+$color-purple-80: #7a3093;
+$color-purple-60: #9b64ae;
+$color-purple-40: #d0a0e0;
+$color-purple-20: #ebccf5;
+$color-purple-10: #f8ecfc;
+$color-purple-accent: #ff3b9c;
+
+$color-blue-100: #262262;
+$color-blue-80: #4c4698;
+$color-blue-60: #7c79ad;
+$color-blue-40: #b2afd7;
+$color-blue-20: #d4d1ed;
+$color-blue-10: #f4f3ff;
+$color-blue-accent: #1d9cd9;
+
+$color-green-100: #00555c;
+$color-green-80: #2f7f86;
+$color-green-60: #639fa4;
+$color-green-40: #99cbcf;
+$color-green-20: #bce1e4;
+$color-green-10: #e5f3f5;
+$color-green-accent: #b3e347;
+
+$color-gray-100: #202e45;
+$color-gray-80: #4c576a;
+$color-gray-60: #79818f;
+$color-gray-40: #a5abb4;
+$color-gray-20: #dde0e3;
+$color-gray-10: #f2f2f4;
+$color-gray-accent: #a7c3b9;
+
+// theme splash colors (from other themes)
+$color-purple-splash: $color-green-20;
+$color-blue-splash: $color-green-20;
+$color-green-splash: $color-purple-20;
+$color-gray-splash: $color-blue-20;
+
+// global colors
+$color-global-base-white: #fff; // color-<any theme>-00
+$color-global-base-black: #000;
+$color-global-accent-yellow: #fedd00;
+$color-global-accent-white: $color-global-base-white;
+$color-global-accent-green: #008a00;
+$color-global-link-blue: #212AA1; 
+$color-global-link-hover: #1857b2;
+$color-global-link-decoration: #AAA6D3;
+$color-global-warning-red: #e01445;
+$color-global-warning-hover: #f91c51;

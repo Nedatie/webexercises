@@ -1,0 +1,23 @@
+@import "colorpalette";
+
+$primary-color: $color-blue-100;
+$theme-accent-color: $color-blue-accent;
+$theme-splash-color: $color-blue-splash;
+$brand-accent-color: $color-global-accent-yellow;
+$background-color: $color-global-base-white;
+
+// default text variants
+$text-color: $color-gray-100;
+
+// surface
+$surface-color: $color-blue-20;
+$alert-color: $color-global-accent-yellow;
+$error-color: $color-global-warning-red;
+
+// text and icons on surfaces
+$on-primary-color: $color-global-accent-white;
+$on-background-color: $text-color;
+$on-surface-color: $primary-color;
+$on-theme-splash-color: $primary-color;
+$on-alert-color: $text-color;
+$on-error-color: $color-global-accent-white;

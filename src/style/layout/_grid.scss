@@ -1,0 +1,48 @@
+@import '../dependencies/all';
+
+.grid {
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto 1fr auto; // auto 1fr auto to push footer to bottom, auto auto 1fr to expand footer, auto auto auto to grow automatically
+    grid-template-areas:
+        'notifications'
+        'header'
+        'content'
+        'footer';
+}
+
+.grid-notifications {
+    grid-area: notifications;
+    padding: 0 16px;
+    background-color: $alert-color;
+    color: $on-alert-color;
+}
+
+.grid-header {
+    grid-area: header;
+    padding: 16px;
+    background-color: $primary-color;
+    color: $on-primary-color;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.grid-content {
+    grid-area: content;
+    padding: 16px;
+    background-color: $background-color;
+}
+
+.grid-footer {
+    grid-area: footer;
+    padding: 16px;
+    background-color: $primary-color;
+    color: $on-primary-color;
+}
+
+@media (min-width: 768px) {
+    .grid-header {
+        font-size: 2rem;
+    }
+    }

@@ -1,0 +1,7 @@
+@import '../dependencies/all';
+
+.notification {
+    &:not(:empty) {
+        padding: 32px 0;
+    }
+}

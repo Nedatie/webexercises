@@ -1,0 +1,7 @@
+@import '../dependencies/all';
+
+.surface {
+    padding: 16px;
+    background-color: $surface-color;
+    color: $on-surface-color;
+}
