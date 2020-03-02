@@ -10,7 +10,7 @@
     background-size: $warning-icon-width 25px;
 
     > p {
-        margin: 32px 0;
+        margin: 24px 0;
     }
 }
 
@@ -21,5 +21,9 @@
         align-items: center;
         background-size: $warning-icon-width 30px;
         background-position-y: center;
+
+        > p {
+            margin: 32px 0;
+        }
     }
 }
