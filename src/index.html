@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Hello world</title>
+    <title>Web exercises</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body class="grid">
-    <section class="js-alertarea grid-notifications">
+    <section class="grid-notifications">
         <div class="layout-constrainwidth">
-            <div class="notification">Exempeltext</div>
+            <div class="js-notification notification"><p>Exempeltext</p></div>
         </div>
     </section>
     <header class="grid-header">
@@ -20,9 +20,26 @@
     </header>
     <main class="grid-content">
         <div class="layout-constrainwidth">
-            <p class="helloworld">hello world</p>
+            <p>Intro: vi går igenom hur projektet är uppsatt, vilka filer som ingår, vart de hamnar och lite kort om hur gulp fungerar.</p>
+            <p class="helloworld">1. Testa att ändra färg på denna text genom att ändra i SASS-modulen</p>
             <div class="surface">
-                fdsafds
+                <p>
+                    2. Javascriptövning
+                    <ul>
+                        <li>
+                            Kolla i console vad som skrivs ut när du klickar på knappen.
+                        </li>
+                        <li>
+                            Uppdatera Notification.setNotification i notification.js så att texten på notifieringsytan byts ut mot texten från textfältet
+                            när man klickar på knappen.
+                        </li>
+                        <li>
+                            Per kan visa exempel på script injection :)
+                        </li>
+                    </ul>
+                </p>
+                <textarea class="js-notificationtext" placeholder="Skriv text här"></textarea>
+                <button class="js-notificationbutton">Visa notifiering</button>
             </div>
         </div>
     </main>
@@ -32,5 +49,10 @@
         </div>
     </footer>
     <script src="script/helloworld.js" ></script>
+    <script src="script/notification.js" ></script>
+    <script>
+        var notification = Notification();
+        notification.init();
+    </script>
 </body>
 </html>

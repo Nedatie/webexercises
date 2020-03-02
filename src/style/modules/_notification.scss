@@ -1,7 +1,25 @@
 @import '../dependencies/all';
 
 .notification {
-    &:not(:empty) {
-        padding: 32px 0;
+    $warning-icon-width: 29px;
+    display: flex;
+    padding-left: $warning-icon-width + 16px;
+    background-image: url(/image/icon_warning_gray.svg);
+    background-position: left top 20px;
+    background-repeat: no-repeat;
+    background-size: $warning-icon-width 25px;
+
+    > p {
+        margin: 32px 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .notification {
+        $warning-icon-width: 34px;
+        padding-left: $warning-icon-width + 32px;
+        align-items: center;
+        background-size: $warning-icon-width 30px;
+        background-position-y: center;
     }
 }
