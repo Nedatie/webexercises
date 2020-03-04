@@ -11,15 +11,22 @@ function Notification() {
 
     function setNotification(e) {
         var textarea = document.getElementsByClassName('js-notificationtext')[0],
-            notification = document.getElementsByClassName('js-notification')[0];
-
-        notification.innerText = "";
+            notification = document.getElementsByClassName('grid-notifications')[0];
 
         if(textarea.value != "")
         {
+            var constraint = document.createElement("div");
+            constraint.classList = "layout-constrainwidth";
+
+            var container = document.createElement("div");
+            container.classList = "js-notification notification notification-error";
+
             var p = document.createElement("p");
             p.innerText = textarea.value;
-            notification.appendChild(p);
+
+            container.appendChild(p);
+            constraint.appendChild(container);
+            notification.appendChild(constraint);
         }
         
         console.log('text in notification is: ' + notification.innerText);
