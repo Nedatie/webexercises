@@ -1,4 +1,6 @@
-@media (min-width: 768px) {
+@import '../dependencies/all';
+
+@media (min-width: $ipad-screen-width) {
     .layout-constrainwidth {
         max-width: 768px;
         margin-left: auto;

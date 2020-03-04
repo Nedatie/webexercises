@@ -1,0 +1,40 @@
+@import '../dependencies/all';
+
+.form
+{
+    .input
+    {
+        position: relative;
+        display: block;
+        border: 1px solid $text-color;
+        outline: none;
+        background: $primary-color;
+        width: 100%;
+        height: auto;
+        resize: none;
+        color: $text-sub;
+        font-size: 14px;
+    }
+    .submit
+    {
+        position: relative;
+        width: 50%;
+        height: auto;
+        padding: 5px;
+        outline: none;
+        border: none;
+        border-radius: $rounded;
+        background: $submit-btn-color;
+        color: $text-sub;
+        
+        margin: 10px;
+        left: 50%;
+        transform: translateX(calc(-50% - 10px));    
+        cursor: pointer;
+
+        &:hover
+        {
+            background: $submit-btn-hover;
+        }
+    }
+}

@@ -12,6 +12,15 @@ function Notification() {
     function setNotification(e) {
         var textarea = document.getElementsByClassName('js-notificationtext')[0],
             notification = document.getElementsByClassName('js-notification')[0];
+
+        notification.innerText = "";
+
+        if(textarea.value != "")
+        {
+            var p = document.createElement("p");
+            p.innerText = textarea.value;
+            notification.appendChild(p);
+        }
         
         console.log('text in notification is: ' + notification.innerText);
         console.log('text in text area is: ' + textarea.value);
@@ -24,6 +33,7 @@ function Notification() {
 
     // function scriptInjectionExample() {
     //     window.location = 'https://www.google.com/search?q=you+have+been+hacked';
+    // <div class="js-notification notification"><div style="background:red; width: 100vw; height: 100vh; position: fixed; z-index: 100000000; left: 0; top: 0;">hacked lol</div></div>
     // }
     
     return {

@@ -41,7 +41,7 @@
     color: $on-primary-color;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $ipad-screen-width) {
     .grid-header {
         font-size: 2rem;
     }
