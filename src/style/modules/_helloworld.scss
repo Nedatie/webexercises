@@ -1,4 +1,6 @@
+@import '../dependencies/all';
+
 .helloworld {
-    color: red;
+    color: $on-background-color;
     font-weight: bold;
 }

@@ -14,6 +14,11 @@
     }
 }
 
+.notification-error
+{
+    background-image: url(/image/icon_warning.svg);
+}
+
 @media (min-width: 768px) {
     .notification {
         $warning-icon-width: 34px;

@@ -1,0 +1,71 @@
+@import '../dependencies/all';
+
+.grid-footer
+{
+    .columns
+    {
+        display: flex;
+        flex-basis: 50%;
+    }
+
+    .column
+    {
+        display: block;
+        flex: 1;
+        margin: 16px;
+
+        text-align: left;
+
+        ul
+        {
+            margin-block-start: 0;
+            margin-block-end: 0;
+            margin-inline-start: 0;
+            margin-inline-end: 0;
+            padding-inline-start: 0;
+        }
+
+        li
+        {
+            list-style: none;
+        }
+
+        a
+        {
+            color: $text-sub;
+            text-decoration: none;
+            cursor: pointer;
+
+            &::after
+            {
+                text-decoration: none;
+                content: ' ›';
+            }
+
+            &:focus
+            {
+                background: $alert-color;
+                color: $on-alert-color;
+                outline: none;
+            }
+
+            &:hover
+            {
+                color: $brand-accent-color;
+                background: none;
+            }
+            
+        }
+    }
+}
+
+@media screen and(max-width: $ipad-screen-width)
+{
+    .grid-footer
+    {
+        .columns
+        {
+            display: block;
+        }
+    }
+}

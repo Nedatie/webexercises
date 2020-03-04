@@ -19,6 +19,12 @@
     color: $on-alert-color;
 }
 
+.grid-notifications-error
+{
+    background-color: $error-color;
+    color: $on-error-color;
+}
+
 .grid-header {
     grid-area: header;
     padding: 16px;

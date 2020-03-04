@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body class="grid">
-    <section class="grid-notifications">
+    <section class="grid-notifications grid-notifications-error">
         <div class="layout-constrainwidth">
-            <div class="js-notification notification"></div>
+            <div class="js-notification notification notification-error"></div>
         </div>
     </section>
     <header class="grid-header">
@@ -70,11 +70,67 @@
                     </li>
                 </ul>
             </div>
+            <div class="surface">
+                <p>
+                    4. SASS-övning deluxe
+                </p>
+                <ul>
+                    <li>
+                        Footern ska bestå av två kolumner som är lika breda
+                    </li>
+                    <li>
+                        Varje kolumn ska innehålla en lista av länkar, med en länk per rad
+                    </li>
+                    <li>
+                        Listan ska inte ha nummer eller punkter till vänster om länkarna
+                    </li>
+                    <li>
+                        I mobil (d.v.s. mindre än ipad) ska kolumnerna ligga staplade på varandra i en kolumn
+                    </li>
+                    <li>
+                        Allt ska ligga innuti layout-constrainwidth-div:en
+                    </li>
+                    <li>
+                        När kolumnerna ligger bredvid varandra ska det vara 32px mellan dem
+                    </li>
+                    <li>
+                        När "kolumnerna" ligger staplade ska det vara 16px mellan dem
+                    </li>
+                </ul>
+            </div>
         </div>
     </main>
     <footer class="grid-footer">
         <div class="layout-constrainwidth">
-            Sidfot
+            <div class="columns">
+                <div class="column">
+                    <ul>
+                        <li>
+                            <a href="https://duckduckgo.com/">God mat</a>
+                        </li>
+                        <li>
+                            <a>Kontak</a>
+                        </li>
+                        <li>
+                            <a>ToS</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <ul>
+                        <li>
+                            <a>God mat</a>
+                        </li>
+                        <li>
+                            <a>Kontak</a>
+                        </li>
+                        <li>
+                            <a>ToS</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
         </div>
     </footer>
     <script src="script/helloworld.js" ></script>
