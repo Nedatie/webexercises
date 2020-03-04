@@ -32,6 +32,8 @@
 
         a
         {
+            line-height: 16px;
+            display: inline-block;
             color: $text-sub;
             text-decoration: none;
             cursor: pointer;
@@ -42,6 +44,11 @@
                 content: ' ›';
             }
 
+            &:hover
+            {
+                color: $brand-accent-color;
+            }
+
             &:focus
             {
                 background: $alert-color;
@@ -49,13 +56,34 @@
                 outline: none;
             }
 
-            &:hover
-            {
-                color: $brand-accent-color;
-                background: none;
-            }
+            
             
         }
+    }
+    a[href^="https://duckduckgo.com"]
+    {
+        &::after
+        {
+            display: inline-block;
+            text-decoration: none;
+            content: ' ';
+            width: 20px;
+            height: 14px;
+            background-image: url("../image/arrow-right-white.svg");
+            background-position: right top;
+            background-repeat: no-repeat;
+            background-size: 16px 16px;
+            
+        }
+
+        &:focus
+        {
+            &::after
+            {
+                background-image: url("../image/arrow-right-black.svg");
+            }
+        }
+        
     }
 }
 
